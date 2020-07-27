@@ -1,5 +1,21 @@
 // Задание 5
 
+class ElectricalApp {
+  constructor(name, power) {
+    this.name = name;
+    this.power = power;
+    this.isTurnedOn = false
+  }
+  
+  setTurnedOn() {
+    this.isTurnedOn = true
+  }
+  
+  setTurnedOff() {
+    this.isTurnedOn = false
+  }
+}
+
 class TableLamp extends ElectricalApp {
   constructor(name, power, type, colorTemp) {
     super(name, power);
